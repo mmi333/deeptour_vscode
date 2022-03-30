@@ -34,13 +34,13 @@ export function activate(context: vscode.ExtensionContext) {
 		}
 		
 		
-		// cp.exec(`python3.8 deeptour_lib/deeptour.py ${wf}`, (err, stdout, stderr) => {
-		// 	console.log('stdout: ' + stdout);
-		// 	console.log('stderr: ' + stderr);
-		// 	if (err) {
-		// 		console.log('error: ' + err);
-		// 	}
-		// });
+		cp.exec(`python3.8 deeptour_lib/deeptour.py ${wf}`, (err, stdout, stderr) => {
+			console.log('stdout: ' + stdout);
+			console.log('stderr: ' + stderr);
+			if (err) {
+				console.log('error: ' + err);
+			}
+		});
 
 	});
 
